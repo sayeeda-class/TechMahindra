@@ -1,0 +1,721 @@
+			
+	Date: 26-02-2024
+	================
+				    Java          
+			            ======
+
+	What is Java?
+	===============
+	Java is an Object Oriented Programming Language.
+	James Gosling at Sun Microsystems in 1991.
+	Oak.
+	Java is the most widely used Programming Langauage.
+	
+	Features of Java:
+	==================
+	1. Simple:
+	 => Easy to learn, read and write in java.
+	 => Java follows simple syntax than c/c++ .
+	 => Java eliminates many complex and ambiguous concept of c/c++
+	 => Pointers, Operator Overloading and goto statements.
+
+	2. Object-Oriented:
+	  => Everthing in java is in the form of the object.
+	  => A Java Program must have atleast one class to print simple msg on console.
+	  => Java Strongly support the concepts of Object-Oriented Programming.
+	  => Inheritance, Encapsulation, Abstraction, Polymorphism.
+
+	3. Robust:
+	   => Robust means strong, 
+	       i. Java Provides automatic garbage collection.
+	       ii. Java alway tries to check errors.
+
+	4. Secure:
+	   => No Pointers in java that avoids security problems.
+	   => Java is best known for its security because it runs insinde a JVM.
+
+	5. Portable:
+	   => Run on different types of machines with no changes.
+	   => 
+
+	6. Platform-Independent:
+	   => The compiled byte code is platform-independent, and we can run on machine
+	   irrespective of the Operating System.
+	   => WORA
+
+	7. High Performance:
+	   => Java is faster than other traditional interpreted programming language because
+	   java byte code is close to native.
+
+	8. Distributed:
+	   => Java is a distributed language as it provides networking facilities.
+
+	9. Multi-Threaded:
+	   Java is a multi-threaded language as it can handle more than one job at a time.
+
+
+	   Structure Of Java Program:
+	   =========================
+
+	   class MyFirstClass
+	   {
+	   public static void main(String args[])
+	   {
+	   //statements
+	   System.out.println("welcome");
+	   }
+	   }
+
+	  
+	  Software Required:
+	  ===================
+	  Jdk-8
+	  Eclipse
+	  Mysql 8
+	  STS
+	  Postman
+	  Docker
+	  Jenkins
+
+
+	  Java Comments:
+	  ===============
+	  => java comments are non-executable statements.
+	  => To provide the description about the program we have to use Java Comments.
+	  Type Comments:
+	  1. Single line //
+	  2. Multi line  /*----------*/
+
+	  Data Types:
+	  ============
+	  => Data types are used to represent the type of the variable and types of the 
+	  expression.
+	  => Data types are used to specify the how much memory is allocated for variables.
+	  Types of Data Types:
+	  1. Primitive
+	  2. Non Primitive
+
+	  1. Primitive:
+	  =============
+	  There are 8 Primitive Data types,
+	  byte============>1
+	  short===========>2
+	  int ============>4
+	  long ===========>8
+	  float ==========>4
+	  double =========>8
+	  char ===========>2
+	  boolean ========>N/A
+
+
+	  Java Notations:(Java coding standards)
+	  ======================================
+
+	  1. Classes and Interface:
+	  =========================
+	  Each word First letter is capital(Upper case)and there is no space b/w words.
+	  Ex:
+	  ArrayIndexOutOfBoundsException
+	  String
+	  StringBuffer
+	  Runnable
+	  Comparable
+
+	  2. Package and subpackage:
+	  ===========================
+	  All are small letters, sub packages are seperated with dot(.) symbol.
+	  Ex: java.lang
+	      java.util
+
+	  3. Variables and Methods:
+	  =========================
+	  second word onwards first letter is capital(upper case). No space between words.
+	  Ex:
+		empId
+		balance
+		netIncome
+		showBalance()
+		addTwoNumbers()
+
+
+	 Identifiers:
+	 ===========
+	 A name in the program is an Identifier. It may be class name or method name or 
+	 variable.
+
+	 Rules:
+	 =====
+	 1. A java identifiers is a sequence of characters, where each character may be 
+	 a letter from a-z or A-Z or a digit from 0-9 or dollar symbol($) or under score(_)
+	 2. Identifiers should not starts with digit.
+	 3. Reserved words can not be used as identifiers.
+	 4. Java Identifiers are case sensitive.
+
+	 What is class?
+	 ==============
+	 A class is collection of variables and its associated methods.
+	 Syntax:
+	 =======
+	 class Class_Name
+	 {
+	 Data_Type variable1;
+	 Data_Type variable2;
+	 -------
+	 Return_Type method_name(Argument list)
+	 {
+	 =====
+	 =====
+	 }
+	 }
+
+	 Ex:
+	 ==
+
+	 class Employee
+	 {
+	 int id;
+	 String name;
+	 void showEmpData()
+	 {
+	 ====
+	 }
+	 }
+
+	 what is an Object?
+	 ==================
+	 An Instance of a class is known as Object.
+
+	Syntax:
+	=======
+		Class_Name objectName = new Class_Name();
+	Ex:
+	===
+		Employee emp = new Employee();
+		
+
+
+
+	  Variable:
+	  ==========
+	  A variable is container which holds data.
+	  
+	  Declaration:
+	  ============
+	  Data_Type variable_name;
+
+	  Ex:
+	       int a;
+
+	  Assignment:
+	  ===========
+		variable=literal;
+
+		Ex:
+		===
+		     a=10;
+
+	 Initialization:
+	 =================
+
+	 Data_Type variable_name = literal;
+
+	 Ex:
+	 ===
+	       int a = 10;
+
+	 Types Of variables:
+	 ====================
+
+	 1. Instance variables
+	 2. Static variables
+	 3. Local variables 
+
+	1. Instance variables:
+	======================
+	=> A variable which is difined as a member of a class is known as an Instance 
+	varibles 
+
+	class Employee{
+	int id;
+	float sal;
+	=======
+	}
+
+	=>If the value of the variable varies from object to object, such type of 
+	varibles are also called as Instance variable.
+	=> The scope of the instance variable is exactly same as object.
+	=>Instance variable can not be accessed from static area directly.
+	   we can access it by using object or obj referenc.
+	=> Memory allocated to instance variable whenever an object is created 
+	=> Instance variable are stored in heap area.
+	=> Seperate copy of instance variable exist for every instance.
+
+	2. Static variables:
+	====================
+	=> A variable which is difined as a static member of a class is known as an class 
+	varibles.
+
+	class Student
+	{
+	static String collegeName;
+	}
+	=>The value of the static variable doesn't varies from object to object.
+	 For all the objects only single copy of the static variable is created.
+	=> The scope of the Static is exactly same as the scope of the class.
+	=> class (static) variable are stored in method area.
+	=> There are 4 ways to access class variables,
+	     1. Directly 
+	     2. By using class name
+	     3. By using object
+	     4. By using object reference
+
+	=>Memory allocated to static variable at the time of class loading.
+
+	3. Local variables:
+	=====================
+	=> A variable which are defined inside the method or a block or constructor,
+	such type of variables are called Local variables.
+	=> memory is allocated to local variable whenever a methor or block or constructor
+	   get called.
+	=> stored in stack area of the memory.
+	=> Only one way to access the local variable which is directly.
+	=> For local variable Jvm doesn't provide default value.
+
+
+	Date: 27-02-2023
+	=================
+	
+	Operators:
+	===========
+	=>It is a symbol which perform a particular operation.  
+	=>An operator is a symbol that operates on one or more Operands to produce a result.
+	=>An operands are the values on which the operators act upon.
+	=>Java has a rich set of operators. The following operators available in Java  are
+	1)  Increment and decrement operator => ++, --
+	2)  Arithmetic operators => + - * / 
+	3)  Relational operators => == , >= , <= , != , >, <
+	4)  Logical Operators => && , || , !
+	5)  Ternary Operator =>(? : )
+	
+
+	Control Statements:
+	===================
+	A control statement in java is a statement that determines whether the other statements will be 	executed or not.
+	There are 4 control statements 
+		Simple if
+		If else
+		Nested if
+		switch
+	
+	Simple if :
+	===========
+	"if" statement is used to evaluate a condition. The control of the program is transferred depending 	upon the specific condition. 
+
+	if(condition) {    
+	statements; //executes when condition is true   
+	}  
+	
+	if-else statement : 
+	===================
+	if(condition) {    
+	statement 1; //executes when condition is true   
+	}  
+	else{  
+	statement 2; //executes when condition is false   
+	}  
+
+	if-else if ladder :
+	This statement contains the if-statement followed by multiple else-if statements and one else 	statement.
+	if(condition 1) {    
+	statement 1; //executes when condition 1 is true   
+	}  
+	else if(condition 2) {  
+	statement 2; //executes when condition 2 is true   
+	}  
+	else {  
+	statement 2; //executes when all the conditions are false   
+	}  
+	
+	Switch Statement:
+	=================
+	The switch case is a multi-way decision-making statement which selects one of the several alternatives 	based on a set of fixed values for a given expression.
+	The switch case is mainly used to replace multiple if-else statements.
+	switch(expression) {
+  	case constant1 : statement(s);
+                   break;
+  	case constant2 : statement{s);
+                   break;
+  	default : statement(s) ;
+	}
+	
+	Looping statements:
+	======================
+	loops are used to repeat a block of code.
+	A program loop is a series of statements that executes for a specified number of repetitions or until 	specified conditions are met.
+	In Java, there are three types of loops.
+		=>for loop
+		=>while loop
+		=>do...while loop
+		
+		=> for loop:
+		============
+			for (initialExpression; testExpression; updateExpression) {
+    			// body of the loop
+			}
+
+		=> while loop:
+		==============
+		while (testExpression) {
+    			// body of loop
+		}
+
+		=>do while loop:
+		=================
+		do{    
+			// loop body  
+  
+		  }while (condition);  
+
+		
+		Method:
+		========
+		A method is a block of code which only runs when it is called. You can pass data, known as 		parameters, into a method. Methods are used to perform certain actions
+		
+		Categories of methods:
+		1.Methods with arguments and with return value
+
+		2.Methods with arguments and without return value
+
+		3.Methods without arguments and with return value
+
+		4.Methods without arguments and without return value
+
+		Polymorphism:
+		=============
+
+		The ability to take more than one form is called polymorphism
+		Poly means many, morph means form
+		There are two types of polymorphism
+		1.compile time polymorphism(static binding)
+		2.run-time polymorphism(dynamic binding)
+
+		1.compile time polymorphism
+		Binding of method call statement with method definition is done at compile time only is known 		as compile time polymorphism
+		Ex: method overloading 
+
+		2.run-time polymorphism
+		Binding of method call statement with method definition is done at runtime only is known as run-time polymorphism
+		Ex: method overriding 
+
+	Constructor:
+	============
+
+       =>Constructor is a special method which has the same name as the class name .
+       =>Constructor does not have any return type 
+       =>Constructor is called automatically when ever an instance is created for a class .
+       =>Constructors are used to initialize the instance variables of a class.
+
+       Constructors are of two types
+	1.default constructors
+	2.parameterised constructors
+
+	this’ Keyword:
+	===============
+
+	=>It is called as reference variable because it refers an object . 
+	=>it always refers current object
+	=>‘this’  keyword is explicitly required to access instance variables when ever both instance variable and local variable names are same.
+	=>this()-This statement calls default constructor of current class
+	=>this(----)  -This statement calls parameterized constructor of current class
+		
+
+		Date: 28-02-2024
+		================
+
+	Static methods:
+	===============
+
+	This is also called as class method
+	A method which is defined with “static” keyword is known as “class method”
+
+	“Static” keyword:
+	==================
+	It is called as modifier because it modifies the behaviour of a variable, block, method and class.
+	It is used to create class variables, static initialization class(it is one type of inner class)
+
+	Static block:
+	==============
+	A block with static keyword is called as static block
+	one class can have any number of blocks and all those blocks are executed from top to bottom order when ever class is loaded
+	A static block is also called as static initialization block because static blocks can be used to initialize class variables
+
+	block:
+	======
+	A group of statements between open brace { and } close brace is called block
+	one class can have any number of blocks and all those blocks are executed from top to bottom order when ever an object is created
+	
+	A block is also called as initialization block because block can be used to initialize instance variables
+
+
+	Encapsulation:
+	==============
+	Binding of variables and methods into a class known as an encapsulation
+
+	Inheritance:
+	============
+	It is also called as “IS-A Relation ship”
+	creating a new class from an existing class is called as inheritance
+	In inheritance, existing class is said to be super class and new class is said to be sub class
+
+	Types of Inheritance:
+	=====================
+	1. Single Inheritance
+	2. Multiple Inheritance
+	3. Multilevel Inheritance
+	4. Hierarchical Inheritance
+	5. Hybrid Inheritance
+
+	1.Single Inheritance
+	==================
+	In single inheritance, a single subclass extends from a single superclass.
+
+	 2. Multiple Inheritance:
+         ========================
+     => A single sub class is derived from more than one parent class is known as Multiple Inheritance.
+     => Java doesn't support multiple inhertance. However, we can achieve multiple inheritance throug interface.
+
+      3. Multilevel Inheritance:
+      ===========================
+      In Multilevel Inheritance, a sub class extends from a super class and then the 
+      same sub class acts as a super class for another class.
+     
+     4. Hierarchical Inheritance:
+     ============================
+     Multiple sub classes extend from a singl parent class.
+
+     5. Hybrid Inheritance:
+     =======================
+     It is a combination of two or more types of inheritance.
+
+
+	"Has-A" Relationship:
+        =====================
+        =>creating an instance of one class as data member of another class is known as 
+         "Has-A" Relationship.
+      Ex:
+      ===
+           class Wheels{
+	   =====
+	   }
+	   class car
+	   {
+             Wheels wh;
+	     int a;
+	     =====
+	    }
+
+	"final" keyword:
+	=================
+	=>It is called as modifier.
+	=>to define a constant variable in java, we use final keyword.
+	=>final class can not be inheritance.
+
+
+
+
+
+
+
+
+
+
+		Date: 29-02-2024
+		==================
+	
+	Strings:
+	=========
+	=> String is a sequence of characters.
+	=>String is a final class, available java.lang package.
+	=> Once we created the String object, it is not possible to modify the existing 
+	   object this is called as immutable.
+	 => There Few class to handle the String,
+	    1.String
+	    2.StringBuffer
+	    3.StringBuilder
+	    4.StringTokenizer
+
+	    There 2 ways to create in java,
+	    1. String s1 = "Hello";
+	    2. String s2 = new String("TechM");    "HELLO"
+
+	    Constructors:
+	    =============
+	    1. String()
+	    2. String(String);
+	    3. String(char[]);
+	    4. Sting(char[],int,int)
+
+	    char ch[]={'h','e','l','l','o'};
+
+	    Methods:
+	    ========
+	    1. public int length();
+	    2. public char charAt(int);
+	    3. public boolean equals(Object);
+	    4. public boolean equalsIgnoreCase(String);
+	    5. public String concat(String);
+	    6. public String toLowerCase();
+	    7. public String toUpperCase();
+	    8. public Sting trim();
+	    9. public Sting subString(int start, int end);
+	    10. public char[] toCharArray();
+
+
+	StringBuffer:
+	============
+	=> StringBuffer is a final class.
+	=> StringBuffer is a mutable class.
+	=> In StringBuffer, equals() is used for reference comparision.
+
+	Constructor:
+	=============
+	1. StringBuffer()
+	2. StringBuffer(String)
+
+	Methods:
+	=========
+	1. public int length();
+	2. public StringBuffer reverse();
+	3. public void append(String);
+	4. public StringBuffer replace(String, int, int );
+	5. public StringBuffer insert(String, int, int)
+
+	StringTokenizer:
+	================
+	=> It allows to break a string into token(words)
+
+	Constructor:
+	============
+	StringTokenizer(String);
+
+	Methods:
+	========
+	1. public boolean hasMoreTokens();
+	2. public Sting nextToken();
+	3. public int countToken();
+
+	toString():
+	===========
+	System.out.println(s1);=> s1.toString();
+	=>whenever we pass object reference of our class into println, it prints 
+	ClassName@Hashcode in Hexadecimal format. because it invoked Object class toString() method.
+	=> Whenever we pass object reference of String, StringBuffer, StingBuilder it prints 
+	content of the object. beacause it invokes toString() of String.
+
+	Date:01-03-2024
+	===============
+
+	Abstract class:
+	================
+	=> A class which is declare with abstract keyword is known as abstract class.
+	=> Abstract class can have only abstract method or both abstract and non abstract
+	    methods.
+	=> Abstract class can not be instantiated.
+	=> Abstract classes can be inherited into another class by using extendskeyword.
+	   then we can create the object for its child(sub) class.
+	
+	Abstract Method:
+	================
+	=> A method which has no body and declare with abstract keyword is called Abstract method.
+	=> If the class contains an abstract method then the class must declare with abstract keyword, other
+	    compilation error.
+
+	Interfaces:
+	===========
+	=> An Interface is basically kind of class.
+	=> An Interface is a collection of public static final variable and 
+	    public abstract method.
+	=> Interface implicity abstract.
+	=> Interface can not be instantiated.
+	=> Interface can be inherited into a class by using a keyword implements.
+	=> Interface does not contain constructor.
+
+	Wrapper classes:
+	=================
+	=>All the primitive data types has its corresponding classes, and those
+	 classes are called wrapper classes because they wrap the data into an object
+	=>The wrapper classes in Java are used to convert primitive types (int, char, float, etc) into corresponding objects.
+	=>To Wrap primitives into object form. So that we can handle primitives also just like objects.
+	=>All wrapper classes belongs to java.lang package
+
+
+	Autoboxing:
+	==========
+	Automatic conversion of primitive to wrapper object by compiler is called
+	Autoboxing.
+	Example:
+	Integer i=10; 
+	
+	AutoUnboxing: 
+	==============
+	Automatic conversion of wrapper object to primitive by compiler is called  AutoUnboxing.
+	Example:
+	Integer i=10; 
+	int a = i;
+
+	
+	Exception Handling:
+	===================
+	Types of errors:
+	================
+	Compile time errors(syntax errors)
+	Run time errors(exceptions)
+	Logical errors
+
+
+	In Exception Handling, we use the folloing keywords
+	   -> try
+	   -> catch
+	   -> throw
+	   -> throws
+	   -> finally 
+
+	Exception Handling By using Try and catch block:
+	   
+	 Syntax:
+	 =======
+	    try
+	    {
+		//risky code
+		1
+		2
+		3
+		4
+		5
+	    }
+	    catch(ExceptionClassName e)
+	    {
+	    //Handling code
+	    }
+
+	Finally:
+	========
+		finally{
+
+		//cleanup code
+		
+		}
+
+
+
+
+
+	
+
+
+
+
+	  
+
+
+
